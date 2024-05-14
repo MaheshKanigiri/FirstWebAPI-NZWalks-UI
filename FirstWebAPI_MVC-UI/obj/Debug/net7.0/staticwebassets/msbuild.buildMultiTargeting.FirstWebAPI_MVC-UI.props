@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FirstWebAPI_MVC-UI.props" />
+</Project>

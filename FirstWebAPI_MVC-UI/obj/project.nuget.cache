@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bXiXeOnCjyg6y3gcpMz6Gy5nwvAfcGmy3oQxnOKelRgYBGR2iqNqttxr10YQdF5o1fM1NG/+4PupEn+gGap+bQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LF775KW\\OneDrive - EY\\Desktop\\.NET_Runnables\\Complete-Web-API\\FirstWebAPI_MVC-UI\\FirstWebAPI_MVC-UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LF775KW\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

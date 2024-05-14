@@ -1,0 +1,45 @@
+﻿@model IEnumerable<FirstWebAPI_MVC_UI.DTO.RegionDto>
+
+<h1 class="mt-3">Regions</h1>
+
+<div class="d-flex justify-content-end mt-3">
+    <a href="@Url.Action("Add", "Regions")" class="btn btn-secondary">Add Region</a>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Edit</th>
+                <th>Delete</th> <!-- New column for delete button -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var region in Model)
+            {
+                <tr>
+                    <td>@region.ID</td>
+                    <td>@region.Code</td>
+                    <td>@region.Name</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Regions", new { id = region.ID })" class="btn btn-secondary">Edit</a>
+                    </td>
+                    <td>
+                        <form method="post" action="@Url.Action("Delete", "Regions")">
+                            <input type="hidden" name="id" value="@region.ID" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No regions available.</p>
+}
